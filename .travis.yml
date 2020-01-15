@@ -1,6 +1,6 @@
 language: python
 python:
-    -"3.81"
+    - "3.8"
 
 services:
     - docker
