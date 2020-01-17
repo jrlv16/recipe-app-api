@@ -14,3 +14,4 @@ deploy:
   provider: heroku
   api_key:
     secure: 93d5009c-e1bc-4559-8561-1759f77c56fb
+  app: jlrecipe
