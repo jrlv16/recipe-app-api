@@ -16,5 +16,5 @@ deploy:
     secure: 93d5009c-e1bc-4559-8561-1759f77c56fb
   app: jlrecipe
   config: 
-    set: DISABLE_COLLECTSTATIC = 1
+    - set DISABLE_COLLECTSTATIC = 1
 
