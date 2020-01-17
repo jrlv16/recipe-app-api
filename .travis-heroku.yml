@@ -1,0 +1,15 @@
+language: python
+python:
+- '3.8'
+services:
+- docker
+before_script: pip install docker-compose
+script:
+- docker-compose run app sh -c "python manage.py test && flake8"
+deploy:
+  provider: heroku
+  user: jrlv16-1
+  api_key:
+    secure: CrnfLzBujKPrebFRyYXx3kBgUKhL17/E/IOC54bQXvD1GAcFhgDouBoaW80ltqIO0aBNa42MR0CAaOS79hiyWkBQzoLUlXeQNlqp2ZB70nyy01v28krG2lyCRq5re5LfGdKSokQrffWqUxbvdFcsybOe6f2LatPXiB1xKJoJb35kPU0Budlm8MoHBF4EcKBE18QIYBIsV6A8Vb0KeLQD/MM2RIyZ5gugPSZOCQShke0Sh2V90orssUanJkN7xY99ISKX8P/17iz2+O4uk6Zh4Q4OSAfG2+D3k+Q+Fdm41AyPtpQYIu9wWu8nRy/A5lsFuNZBMLUKZvJSB/h6Lze31dhFAWuF7q45Ot0JHPavAHcB9Q2s/tvgCp1GAWJq8m0i9F0C6R6/I4KyhY/p+ZxmSBEXIRk/4yU7VKSFIYPfFEzvvLIpBJnt+9bPjzZrEd7F+cbNb/hG5Lkf3R/7KfseakeGP5+xZlWJCyKzsQ6dCXM8/pSkt2EM9JtLsECoXr1+q2ZugoNLdVQ0fkSGgvxyAWX83yNcNiIe+GsitpKLUYCetDQNi9t4i9dNf0azhmvQhXKIHXJ+azJ51xn2KP8wX+Lh/S6/xmsYBl/ihfdEm+5ABWPbI7fsqiCQYt5QTNqxKC37XpnCrkD6+ccOWirGdio1TqmTjyc4/kRHMj40wo0=
+  name: jlrecipe
+  
