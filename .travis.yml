@@ -1,16 +1,12 @@
 language: python
 python:
-    - "3.8"
-
+- '3.8'
 services:
-    - docker
-
+- docker
 before_script: pip install docker-compose
-
 script:
-    - docker-compose run app sh -c "python manage.py test && flake8"
-
+- docker-compose run app sh -c "python manage.py test && flake8"
 deploy:
   provider: heroku
   api_key:
-    secure: "93d5009c-e1bc-4559-8561-1759f77c56fb"
+    secure: c3O0msTTD3joWQp1e59OVVS3Ws8ADO8QUn/4LbbtOIoENV5ICopa5GQrY72bVPqB100lYEYzM+QjPU6sD8JFZ7a1JNi+XnLiD8aSd7HiXwCviPPJ9xuazTHJFO7gHAiGyuIMk7Ntiy3d4thbtUWq5by0yUBtLUpfcxULFbmZL+GYf35B6MbvUnGOp1bF6RgUJDyyT1v3cztTOvnYO4NWZMLNfqF0ZOOZnKWuAezf5AI9qH2A/loQWgmalj5cHxSVa54UtLOvhesbhU5aW0eJFjIOAUfsAvAXy3WuojZrp2HnftnuoP/0nGjoFsJepAcA3ZXkf/Ep9dHqUVeUg0CZ8VQvYFIqKQCF6msUg0FfFkUygN2q2Q/m4ihnr3FmAp2F5xcCRjLzVGH7XV81T/uwJRDQMQONfdE/ixmz15mRuzuHtmC8NZ/e7V6yMtvndoDKXSK9jiqC4tX38wNExNJovxNKqZBP/9okEOlJOnsdWrRHF8YmlyS+XRfZqZRZRJ3QHujdTuO5CyfRvtLPNlhqVfECuRLxEaI3nxXNL2R1Y5uy3IcctZ5ui7n5pKA1AfrpswVs23GV3xkKMmE5SaqZr9mg1/S1+l0KvmIlIxhUu+dYbzm4VAFLk2F/m3L3xT3/bAIyU76C9+Q6s9Y9Ut2bT8DBy3dZxk5ePcCmqlWDyTQ=
