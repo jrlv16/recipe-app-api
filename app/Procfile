@@ -1,1 +1,2 @@
-web: gunicorn app.asgi --log-file -
+web: gunicorn app.asgi.py --log-file -
+
