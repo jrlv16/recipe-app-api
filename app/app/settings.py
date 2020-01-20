@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-''' DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'HOST': os.environ.get('DB_HOST'),
@@ -86,17 +86,17 @@ WSGI_APPLICATION = 'app.wsgi.application'
         'USER':os.environ.get('DB_USER'),
         'PASSWORD':os.environ.get('DB_PASS'),
     }
-} '''
+}
 
 # Pour scalingo
-import dj_database_url
+''' import dj_database_url
 
 try:
   database_url = os.environ["DATABASE_URL"]
 except KeyError:
   database_url = "file:///{}".format(os.path.join(BASE_DIR, 'db.sqlite3'))
 
-DATABASES = { 'default': dj_database_url.config() }
+DATABASES = { 'default': dj_database_url.config() } '''
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
