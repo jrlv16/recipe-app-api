@@ -10,7 +10,7 @@ deploy:
   provider: scalingo
   api_key:
     secure: MHHkHYcfMMo+vXSSVFwaCq667xcucjnUgSiwciI2dz7XFzlfblwaOB3FtoiMVk6D/LepI0UNahIzRoiiBzoJNj6ZVkX0Wgyu7MNVFmKUf5zIa8Eqg2/Ph9IxlbLyLL+x6srvgld4fBntWkIZKZK7u6GGxFn7dqE8V44MI234f3xpMw0TwNY8i823iRAtnhrFgzpcMVdgGLVzJkzj7UeL8NyPqlutLDI82fSx1GX1z1z/NfBUcDPJ2Z2Jj2w46qrGpEq3utwnt7i0K5Slw20YucwxYHNQMfdhMoUJ55/dM8lN/DePNrnfOqpmkGMeyLazUATpS/KczhSJeUt7tDudCIpDQlgZFSFzo+iXfuO5pMH7m0V2q1siRdXt4cM2SFThlXQwNJS770sY+3EK4+XeiKtiIrNdll6OXEQ893VuR3ChdE1u24eF/JaP132gmR6927Iamy7EZx4tsDfHlmUEtmbHuoUf526JT8uhEaOYIeNW/Ul0gWK5k254U4f3hQDWw09dBRgr7sZ5NT2NALdhrsT6cEnx1PPIMmHES7XzxQovZ07beqft6DxuHCwsAsnhWFhmi6EVlZFsbeSndfd1VxMJUVJd9xV3wXTtWV29obQyuFie0iaXcEAw3ibvwGrrZTaVdKMex3YGbATOstqO5WdwS/TC4MLY8RP3HBGe8ac=
-  remote: recipe-app-api
+  
   branch: scalingo-deploy
-        
+  app: jlrecipe      
   
