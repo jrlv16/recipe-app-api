@@ -25,7 +25,7 @@ SECRET_KEY = 'eqns26$#$295ufmu_f$hjs#yr8r)sup2ar7gxd7a61$7vzc2kv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://jlrecipe.osc-fr1.scalingo.io',]
 
 
 # Application definition
