@@ -45,6 +45,7 @@ from recipe import serializers
 Refactorisation de tout ce qui est au-dessus
 """
 
+
 class BaseRecipeAttrViewSet(viewsets.GenericViewSet,
                             mixins.ListModelMixin,
                             mixins.CreateModelMixin):
